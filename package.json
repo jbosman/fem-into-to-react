@@ -1,0 +1,24 @@
+{
+  "name": "fem-into-to-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbosman/fem-into-to-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbosman/fem-into-to-react/issues"
+  },
+  "homepage": "https://github.com/jbosman/fem-into-to-react#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
