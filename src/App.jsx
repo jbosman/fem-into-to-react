@@ -1,7 +1,9 @@
 import React from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-import Pet from './Pet';
+//import Pet from './Pet';
+
+import SearchParams from './SearchParams';
 
 // Original App component without JSX
 // function App() {
@@ -24,9 +26,10 @@ function App(){
   return (
     <div>
       <h1>Adopt Me!</h1>
-      <Pet name="Luna"   animal="Dog"  bread="Havanese" />
+      <SearchParams />
+      {/* <Pet name="Luna"   animal="Dog"  bread="Havanese" />
       <Pet name="Pepper" animal="Bird" bread="Cockatiel" />
-      <Pet name="Doink"  animal="Cat"  bread="Mixed" />
+      <Pet name="Doink"  animal="Cat"  bread="Mixed" /> */}
     </div>
   );
 }
