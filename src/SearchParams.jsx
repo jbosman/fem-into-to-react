@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import Pet from './Pet';
 
+import useBreedList from './useBreedList';
+
 const ANIMALS = [ "bird", "cat", "dog", "rabbit", "reptile" ];
 
 function SearchParams(){
@@ -9,7 +11,7 @@ function SearchParams(){
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
-  const breeds = [];
+  const [breeds, breedsStatus] = useBreedList(animal);
 
   
   useEffect(() => { 
@@ -44,7 +46,7 @@ function SearchParams(){
           />
         </label>
         <label htmlFor="animal">
-          Animanl
+          Animal
           <select
             onChange={(e) => {
                 setAnimal(e.target.value);
